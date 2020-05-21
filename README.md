@@ -69,12 +69,6 @@ sex
 data %>% select(Sex, Age_group) %>% mutate(Sex = reorder(Sex, Age_group)) %>% ggplot(aes(Age_group, fill=Sex)) + geom_bar()
 ```
 
-    ## Warning in mean.default(X[[i]], ...): argument is not numeric or logical:
-    ## returning NA
-    
-    ## Warning in mean.default(X[[i]], ...): argument is not numeric or logical:
-    ## returning NA
-
 ![](NZ-covid19-visualization-practice_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 \#\#Total cases by
@@ -89,8 +83,6 @@ data %>% ggplot(aes(DHB, fill=DHB)) + geom_bar()
 ``` r
 data %>% ggplot(aes(DHB, y=..count.., fill=DHB)) + geom_density(alpha=0.2)
 ```
-
-    ## Warning: Groups with fewer than two data points have been dropped.
 
 ![](NZ-covid19-visualization-practice_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
